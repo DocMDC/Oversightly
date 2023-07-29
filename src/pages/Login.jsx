@@ -43,23 +43,26 @@ function Login() {
                             className="mb-10 w-full rounded-sm px-2 h-11"
                         />
                         <input 
-                            type="text" 
+                            type="password" 
                             placeholder="Password"
                             name='password'
                             onChange={updateLoginForm}
                             value={loginForm.password}
                             className="mb-10 w-full rounded-sm px-2 h-11"
-                        />
-                        <Link 
-                            to="/dashboard"
-                            className="text-white bg-primary w-1/2 rounded-2xl h-11 transition ease-in-out delay-100 hover:bg-highlight flex items-center justify-center"
-                        >
-                        <button>Submit</button>
-                        </Link>
+                        />                            
+                        <button className="text-white bg-primary w-1/2 rounded-2xl h-11 transition ease-in-out delay-100 hover:bg-highlight flex items-center justify-center">Submit</button>
                     </form>
                 </div>
-                <p className="mt-4">Not a member? <span className="text-primary cursor-pointer transition ease-in-out delay-100 hover:text-highlight">Try for free.</span></p>
-                <p className="mt-1">Forgot your <span className="text-primary cursor-pointer transition ease-in-out delay-100 hover:text-highlight">password?</span></p>
+                <p className="mt-4">Not a member? 
+                    <Link to="/signup">
+                        <span className="text-primary cursor-pointer transition ease-in-out delay-100 hover:text-highlight"> Try for free.</span>
+                    </Link>
+                </p>
+                <p className="mt-1">Forgot your 
+                    <Link to="/lost-password">
+                        <span className="text-primary cursor-pointer transition ease-in-out delay-100 hover:text-highlight"> password?</span>
+                    </Link>
+                </p>
             </div>
         </>
     )

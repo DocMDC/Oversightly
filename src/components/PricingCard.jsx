@@ -2,6 +2,7 @@ import React from 'react'
 import {GiTeacher, GiSandsOfTime} from 'react-icons/gi'
 import {BsPersonCheckFill} from 'react-icons/bs'
 import {SlControlPause} from "react-icons/sl"
+import {Link} from "../../node_modules/react-router-dom"
 
 
 function PricingCard(props) {
@@ -35,7 +36,9 @@ function PricingCard(props) {
                     <h6>{props.dataUse}</h6>
                 </div>
             </div>
-            <button className="w-72 mx-auto mt-32 flex items-center justify-center bg-primary rounded-2xl h-12 p-2 cursor-pointer text-white font-serif transition ease-in-out delay-100 hover:bg-highlight">Select</button>
+            <Link to="/signup">
+                <button className="w-72 mx-auto mt-32 flex items-center justify-center bg-primary rounded-2xl h-12 p-2 cursor-pointer text-white font-serif transition ease-in-out delay-100 hover:bg-highlight">Select</button>
+            </Link>
         </div>
     );
 }

@@ -9,10 +9,18 @@ export default function Footer() {
           <p>&copy; Oversightly, inc.</p>
         </div>
         <div className="flex flex-row items-center justify-around w-40">
-          <BsFacebook />
-          <FaTwitter />
-          <FaLinkedinIn />
-          <FaInstagram />
+          <a href="https://www.facebook.com" target="_blank">
+            <BsFacebook />
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <FaTwitter />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <FaLinkedinIn />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <FaInstagram />
+          </a>
         </div>
     </div>
   )

@@ -2,6 +2,7 @@ import React from "react"
 import {RiQuestionAnswerFill} from "react-icons/ri"
 import {TfiWrite} from "react-icons/tfi"
 import {SiFastapi} from "react-icons/si"
+import {Link} from "../../node_modules/react-router-dom"
 
 export default function ContactBlurb() {
     return (
@@ -15,7 +16,11 @@ export default function ContactBlurb() {
                 </div>
                 <div className="h-2/3 w-[1px] bg-gray-400"></div> 
                 <div className="w-full px-3">
-                <h5 className="text-center">Check out our <span className="text-primary cursor-pointer hover:text-highlight">FAQ page</span></h5>
+                <h5 className="text-center">Check out our 
+                    <Link to="/faq">
+                        <span className="text-primary cursor-pointer hover:text-highlight"> FAQ page</span>
+                    </Link>
+                </h5>
                 </div>
                 
             </div>
